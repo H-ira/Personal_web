@@ -1,7 +1,18 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #b8d9f3;
+    background-image: url('Pictures/blue.jpg'); /* put your image path here */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* makes background fixed on scroll */
+    background-size: cover;
+    min-height: 100vh;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 .long_rect {
     width: 300px;
@@ -20,6 +31,7 @@ body {
     left: 930px;
     border-radius: 5px;
     position: absolute;
+    
 }
 .outer_circle {
     width: 500px;
@@ -117,10 +129,10 @@ body {
 }
 .circle_blend_mask {
     position: absolute;
-    width: 115px;
+    width: 105px;
     height: 20px;
-    top: 507px;   /* adjust until it’s perfectly over the seam */
-    left: 763px;  /* adjust until it’s perfectly over the seam */
+    top: 496px;   /* adjust until it’s perfectly over the seam */
+    left: 750px;  /* adjust until it’s perfectly over the seam */
     background-color: rgb(216, 220, 221); /* match your page background */
     z-index: 3; /* above both circles */
     border-radius: 10px;
@@ -137,6 +149,55 @@ body {
     height: 2px;    /* thickness */
     background-color: rgb(66, 74, 82);
     position: absolute;
-    top: 100px;     /* vertical position */
-    left: 50px;    /* horizontal position */
+}
+.linkedin_image {
+    width: 60px;
+    height: 60px;
+    position: absolute; /* allow top/left positioning */
+    /* top: 260px;   */
+    /* left: 295px;  */
+    z-index: 2;
+}
+
+.email_image {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* top: 290px; */
+    /* left: 295px; */
+    z-index: 2;
+}
+
+.logo_image {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    /* top: 325px; */
+    /* left: 295px; */
+    z-index: 2;
+}
+
+.linkedin_text {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(42, 48, 53);
+    margin: 5px 0 0 0; /* small gap between icon and text */
+}
+.email_text {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(42, 48, 53);
+    margin-left: 5px 0 0 0; /* small gap between icon and text */
+    margin-top: 5px;
+}
+.logo_text {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(42, 48, 53);
+    margin: 5px 0 0 0; /* small gap between icon and text */
+}
+.icon_container {
+    position: absolute;  /* lets you place it anywhere */
+    text-align: center;  /* centers text under icon */
+    z-index: 2; 
 }
